@@ -23,6 +23,11 @@
       "atmelavr",
       "espressif32"
     ],
-    "dependencies": []
+    "dependencies": [
+      {
+        "name": "Utilify",
+        "url": "https://github.com/PiFou86/Utilify.git"
+      }
+    ]
 }
   

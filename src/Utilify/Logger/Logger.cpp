@@ -1,12 +1,6 @@
-#include "Utilify/Logger/Logger.h"
+#include <Utilify/Logger/Logger.h>
 
-String padLeft(const String &value, char padChar, unsigned int length) {
-  String result = value;
-  while (result.length() < length) {
-    result = padChar + result;
-  }
-  return result;
-}
+#include <Utilify/StringUtils.h>
 
 void LoggerImpl::begin(Stream *stream) { this->m_stream = stream; }
 
@@ -139,10 +133,10 @@ String LoggerImpl::millisToTime(unsigned long millis) {
   unsigned long millisRemainder = millis % 1000;
 
   String result =
-      padLeft(String(hoursRemainder), '0', 2) + String(F(":")) +
-      padLeft(String(minutesRemainder), '0', 2) + String(F(":")) +
-      padLeft(String(secondsRemainder), '0', 2) + String(F(".")) +
-      padLeft(String(millisRemainder), '0', 3);
+      StringUtils::padLeft(String(hoursRemainder), '0', 2) + String(F(":")) +
+      StringUtils::padLeft(String(minutesRemainder), '0', 2) + String(F(":")) +
+      StringUtils::padLeft(String(secondsRemainder), '0', 2) + String(F(".")) +
+      StringUtils::padLeft(String(millisRemainder), '0', 3);
   return result;
 }
 
