@@ -1,7 +1,7 @@
 {
     "name": "UtilifyLogger",
     "version": "1.0.0",
-    "description": "Utilify Logger is a lightweight and efficient logging library designed for ESP32 and Arduino Uno. It supports configurable log levels (INFO, DEBUG, ERROR) and multiple output types, such as serial console. Perfect for resource-constrained embedded systems, it ensures simple and effective system monitoring.",
+    "description": "Utilify Logger is a lightweight and efficient logging library designed for ESP32 and Arduino Uno. It supports configurable log levels (INFO, VERBOSE, WARNING, ERROR) and multiple output types, such as serial console. Perfect for resource-constrained embedded systems, it ensures simple and effective system monitoring.",
     "keywords": ["Logger", "ESP32", "Arduino"],
     "authors": [
       {
@@ -26,7 +26,8 @@
     "dependencies": [
       {
         "name": "Utilify",
-        "url": "https://github.com/PiFou86/Utilify.git"
+        "url": "https://github.com/PiFou86/Utilify.git",
+        "version": "main"
       }
     ]
 }
