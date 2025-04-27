@@ -133,10 +133,10 @@ String LoggerImpl::millisToTime(unsigned long millis) {
   unsigned long millisRemainder = millis % 1000;
 
   String result =
-      StringUtils::padLeft(String(hoursRemainder), '0', 2) + String(F(":")) +
-      StringUtils::padLeft(String(minutesRemainder), '0', 2) + String(F(":")) +
-      StringUtils::padLeft(String(secondsRemainder), '0', 2) + String(F(".")) +
-      StringUtils::padLeft(String(millisRemainder), '0', 3);
+      StringUtils::padLeft(String(hoursRemainder), 2, '0') + String(F(":")) +
+      StringUtils::padLeft(String(minutesRemainder), 2, '0') + String(F(":")) +
+      StringUtils::padLeft(String(secondsRemainder), 2, '0') + String(F(".")) +
+      StringUtils::padLeft(String(millisRemainder), 3, '0');
   return result;
 }
 
