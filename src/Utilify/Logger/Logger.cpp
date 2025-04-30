@@ -110,6 +110,8 @@ void LoggerImpl::verboseln(const char *value, bool writePrefix) {
 }
 
 void LoggerImpl::print(const String &value, bool writePrefix) {
+  if (!this->m_stream) return;
+
   if (writePrefix) {
     this->m_stream->print(millisToTime(millis()) + String(F(" - ")));
   }
@@ -117,6 +119,8 @@ void LoggerImpl::print(const String &value, bool writePrefix) {
 }
 
 void LoggerImpl::println(const String &value, bool writePrefix) {
+  if (!this->m_stream) return;
+
   if (writePrefix) {
     this->m_stream->print(millisToTime(millis()) + String(F(" - ")));
   }
