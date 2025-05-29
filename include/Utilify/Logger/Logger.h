@@ -45,6 +45,7 @@ class LoggerImpl {
 
 extern LoggerImpl Logger;
 
-#define LOGGER_BEGIN_METHOD  Logger.verboseln(String(__FILE__) + String(F(" - ")) + String(__FUNCTION__) + String(F(": begin")));
-#define LOGGER_END_METHOD    Logger.verboseln(String(__FILE__) + String(F(" - ")) + String(__FUNCTION__) + String(F(": end")));
-#define LOGGER_VAR(var)      Logger.verboseln(String(__FILE__) + String(F(" - ")) + String(__FUNCTION__) + String(F(": @")) + String(__LINE__) + String(F(" - ")) + String(#var) + String(F(" = ")) + String(var));
+#define LOGGER_BEGIN_METHOD  Logger.verboseln(String(__FILE__) + String(F("(")) + String(__LINE__) + String(F(") - ")) + String(__FUNCTION__) + String(F(": begin")));
+#define LOGGER_TRACE(msg)    Logger.verboseln(String(__FILE__) + String(F("(")) + String(__LINE__) + String(F(") - ")) + String(__FUNCTION__) + String(F(": trace")) + String(F(" - ")) + String(msg));
+#define LOGGER_END_METHOD    Logger.verboseln(String(__FILE__) + String(F("(")) + String(__LINE__) + String(F(") - ")) + String(__FUNCTION__) + String(F(": end")));
+#define LOGGER_VAR(var)      Logger.verboseln(String(__FILE__) + String(F("(")) + String(__LINE__) + String(F(") - ")) + String(__FUNCTION__) + String(F(" - ")) + String(#var) + String(F(" = ")) + String(var));
