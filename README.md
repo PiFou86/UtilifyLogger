@@ -20,6 +20,7 @@ Add **UtilifyLogger** to your PlatformIO project by including the following in y
 platform = espressif32
 framework = arduino
 lib_deps =
+    https://github.com/PiFou86/Utilify.git
     https://github.com/PiFou86/UtilifyLogger.git
 ```
 
