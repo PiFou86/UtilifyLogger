@@ -38,6 +38,12 @@ void setup() {
   Serial.begin(9600);
   Logger.begin(&Serial);
 
+  while (!Serial) {
+    ;
+  };
+
+  Logger.setLoggerLevel(LoggerLevel::VERBOSE);
+
   LOGGER_BEGIN_METHOD;
 
   // pour la démo seulement :
