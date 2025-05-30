@@ -107,23 +107,25 @@ Logger.setLoggerLevel(DEBUG);
 Here's an example of what you might see in the serial monitor:
 
 ```
-00:00:00.000 - Setting logger level to ERROR and printing tests...
-00:00:00.005 - ERROR: Hello World!
-00:00:00.043 - Setting logger level to WARNING and printing tests...
-00:00:00.115 - ERROR: Hello World!
-00:00:00.152 - WARNING: Hello World!
-00:00:00.192 - Setting logger level to INFO and printing tests...
-00:00:00.262 - ERROR: Hello World!
-00:00:00.299 - WARNING: Hello World!
-00:00:00.338 - INFO: Hello World!
-00:00:00.375 - Setting logger level to VERBOSE and printing tests...
-00:00:00.448 - ERROR: Hello World!
-00:00:00.485 - WARNING: Hello World!
-00:00:00.525 - INFO: Hello World!
-00:00:00.561 - VERBOSE: Hello World!
-00:00:00.601 - VERBOSE: src/main.cpp - setup: @35 - a = 42
-00:00:00.663 - VERBOSE: src/main.cpp - setup: @36 - b = Hello World!
-00:00:00.736 - VERBOSE: src/main.cpp - setup: end
+00:00:00.000 - VERBOSE: examples/general/main.cpp(16) - setup: begin
+00:00:00.008 - VERBOSE: examples/general/main.cpp(20) - setup - i = 0
+00:00:00.081 - Setting logger level to ERROR and printing tests...
+00:00:00.152 - ERROR: Hello World!
+00:00:00.190 - Setting logger level to WARNING and printing tests...
+00:00:00.263 - ERROR: Hello World!
+00:00:00.301 - WARNING: Hello World!
+00:00:00.340 - Setting logger level to INFO and printing tests...
+00:00:00.410 - ERROR: Hello World!
+00:00:00.448 - WARNING: Hello World!
+00:00:00.488 - INFO: Hello World!
+00:00:00.524 - Setting logger level to VERBOSE and printing tests...
+00:00:00.598 - ERROR: Hello World!
+00:00:00.634 - WARNING: Hello World!
+00:00:00.674 - INFO: Hello World!
+00:00:00.711 - VERBOSE: Hello World!
+00:00:00.751 - VERBOSE: examples/general/main.cpp(41) - setup - a = 42
+00:00:00.827 - VERBOSE: examples/general/main.cpp(42) - setup - b = Hello World!
+00:00:00.912 - VERBOSE: examples/general/main.cpp(44) - setup: end
 ```
 
 ## Dependencies
