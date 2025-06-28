@@ -18,12 +18,9 @@
 Add **UtilifyLogger** to your PlatformIO project by including the following in your `platformio.ini` file:
 
 ```ini
-[env:esp32dev]
-platform = espressif32
-framework = arduino
 lib_deps =
-    https://github.com/PiFou86/Utilify.git
-    https://github.com/PiFou86/UtilifyLogger.git
+    sirdrako/Utilify
+    sirdrako/UtilifyLogger
 ```
 
 ### Basic Usage
