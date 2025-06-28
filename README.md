@@ -2,6 +2,8 @@
 
 **UtilifyLogger** is a lightweight and efficient logging library designed for embedded systems, including ESP32 and Arduino Uno. It provides configurable log levels, making it easier to monitor and debug embedded applications.
 
+[![PlatformIO Registry](https://badges.registry.platformio.org/packages/sirdrako/library/UtilifyLogger.svg)](https://registry.platformio.org/libraries/sirdrako/UtilifyLogger)
+
 ## Features
 
 - **Configurable Log Levels**: Supports levels such as `INFO`, `VERBOSE`, `WARNING`, `ERROR`, and more to control verbosity.
