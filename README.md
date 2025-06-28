@@ -133,8 +133,7 @@ The library depends on the following:
 
 - Utilify: Core utilities for string manipulation and device-specific operations.
 
-## Author
+**Pierre-François Léon**
 
-**Pierre-François Léon**  
-🔗 [Linkedin](https://www.linkedin.com/in/pierrefrancoisleon/)  
-🔗 [GitHub Profile](https://github.com/PiFou86)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/pierrefrancoisleon/)
+[![GitHub profile](https://img.shields.io/badge/GitHub-Profile-blue?logo=github&style=for-the-badge)](https://github.com/PiFou86)
